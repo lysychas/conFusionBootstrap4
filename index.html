@@ -94,9 +94,9 @@
         </div>
     </div>
 
+    <!-- Modal reservation form -->
     <div id="reservationModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
-            <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Reserve a Table</h4>
@@ -193,8 +193,6 @@
                 <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" alt="logo" class="img-fluid" />
                 </div>
-
-                <!-- Task 3 -->
                 <div class="col-12 col-sm-3 align-self-center">
                     <a id="reservationButton" role="button" class="btn btn-block nav-link btn-warning">Reserve Table</a>
                 </div>
@@ -295,7 +293,6 @@
             </div>
         </div>
 
-        <!-- Task 2 -->
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
@@ -416,24 +413,12 @@
                 }
             });
 
-            $("#loginButton").click(function () {
+            $("#loginButton, #loginClose, #loginCancel").click(function () {
                 $("#loginModal").modal("toggle");
             });
-            $("#loginClose").click(function () {
-                $("#loginModal").modal("hide");
-            });
-            $("#loginCancel").click(function () {
-                $("#loginModal").modal("hide");
-            });
 
-            $("#reservationButton").click(function () {
+            $("#reservationButton, #reservationClose, #reservationCancel").click(function () {
                 $("#reservationModal").modal("toggle");
-            });
-            $("#reservationClose").click(function () {
-                $("#reservationModal").modal("hide");
-            });
-            $("#reservationCancel").click(function () {
-                $("#reservationModal").modal("hide");
             });
         });
     </script>
